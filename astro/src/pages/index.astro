@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
 import { Image } from "@astrojs/image/components";
 
-import localImage from "../../public/images/bg-404.jpg";
+import logo from "/public/images/logo.png";
 
 import { getSanityContent, getSanityImageUrl } from "../utils/helpers.js";
 import { website } from "../lib/api.js";
@@ -13,7 +13,7 @@ const title = "template";
 ---
 
 <Layout title={title}>
-  {
+  <!-- {
     websites.map((website) => (
       <main>
         <h1 class="text-gradient">{website.title}</h1>
@@ -32,66 +32,63 @@ const title = "template";
         />
       </main>
     ))
-  }
+  } -->
+  <header class="header">
+    <div class="header__logo-box">
+      <Image src={logo} class="header__logo" alt="Logo" />
+    </div>
+    <Navbar />
+  </header>
 </Layout>
-<style>
-  :root {
-    --astro-gradient: linear-gradient(0deg, #b29758, #191c40);
-  }
+<style lang="scss">
+  @import "../styles/variables";
+  @import "../styles/animations";
+  @import "../styles/mixins";
+  .header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/public/images/header.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    position: relative;
 
-  h1 {
-    margin: 2rem 0;
-  }
-
-  main {
-    margin: auto;
-    padding: 1em;
-    max-width: 60ch;
-  }
-
-  .text-gradient {
-    font-family: "Roboto Slab", serif;
-    font-size: 6rem;
-    font-weight: 700;
-    background-image: var(--astro-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100% 200%;
-    background-position-y: 100%;
-    border-radius: 0.4rem;
-    animation: pulse 4s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%,
-    100% {
-      background-position-y: 0%;
+    &__logo-box {
+      @include media(mobile) {
+        padding: 50px;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+      @include media(desktop) {
+        position: absolute;
+        top: 15rem;
+        left: 10rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        padding: 0;
+      }
     }
-    50% {
-      background-position-y: 80%;
+
+    &__logo {
+      @include media(mobile) {
+        width: 100%;
+        height: 300px;
+      }
+      @include media(desktop) {
+        width: 100%;
+        height: 25vw;
+      }
     }
-  }
 
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    background: #4f39fa;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    color: var(--color-bg);
-  }
-
-  .instructions code {
-    font-size: 0.875em;
-    border: 0.1em solid var(--color-border);
-    border-radius: 4px;
-    padding: 0.15em 0.25em;
-  }
-
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
+    &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
   }
 </style>
