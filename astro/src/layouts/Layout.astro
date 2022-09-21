@@ -1,8 +1,8 @@
 ---
+import { Image } from "@astrojs/image/components";
 export interface Props {
   title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -21,9 +21,24 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+
   <body>
-    <slot />
-    <style>
+    <div class="loading">
+      <Image src="../../public/images/logo.png" width="200" height="200" />
+      <div id="loader">
+        <span id="dot"></span>
+        <div id="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="body"><slot /></div>
+    <style lang="scss">
+      @import "../styles/variables";
+      @import "../styles/animations";
+      @import "../styles/mixins";
       *,
       *::after,
       *::before {
@@ -35,26 +50,77 @@ const { title } = Astro.props;
       html {
         font-family: "Quicksand", sans-serif;
         font-size: 62.5%;
-        color: var(--color-text);
-        background-color: var(--color-bg);
+        scroll-behavior: smooth;
       }
 
       body {
         box-sizing: border-box;
       }
-    </style>
-
-    <style is:global>
-      h1 {
-        font-size: var(--font-size-xl);
-      }
-
-      h2 {
-        font-size: var(--font-size-lg);
-      }
       code {
         font-family: "Quicksand", sans-serif;
       }
+      .body {
+        visibility: hidden;
+      }
+
+      .loading img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -230px 0 0 -105px;
+        background-color: black;
+        border-radius: 100px;
+      }
+      #loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 142px;
+        height: 40px;
+        margin: -20px 0 0 -71px;
+        background: white;
+        filter: contrast(20);
+      }
+      #dot {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 12px;
+        left: 15px;
+        filter: blur(4px);
+        background: black;
+        border-radius: 50%;
+        transform: translateX(0);
+        animation: dot 2.8s infinite;
+      }
+      #dots {
+        transform: translateX(0);
+        margin-top: 12px;
+        margin-left: 31px;
+        animation: dots 2.8s infinite;
+      }
+      #dots span {
+        display: block;
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-left: 16px;
+        filter: blur(4px);
+        background: #000;
+        border-radius: 50%;
+      }
+
+      @keyframes dot {
+        50% {
+          transform: translateX(96px);
+        }
+      }
+      @keyframes dots {
+        50% {
+          transform: translateX(-31px);
+        }
+      }
     </style>
+    <script src="../../public/js/index.js"></script>
   </body>
 </html>

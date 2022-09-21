@@ -1,8 +1,8 @@
 //  map holding breakpoint values
 $breakpoints: (
   mobile: 0px,
-  tablet: 680px,
-  desktop: 960px,
+  tablet: 426px,
+  desktop: 768px,
 );
 
 //  mixin to print out media queries (based on map keys passed)

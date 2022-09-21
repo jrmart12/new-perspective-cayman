@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/Navbar.jsx";
+import Services from "../components/Services.astro";
 import { Image } from "@astrojs/image/components";
 
 import logo from "/public/images/logo.png";
@@ -34,11 +35,16 @@ const title = "template";
     ))
   } -->
   <header class="header">
-    <div class="header__logo-box">
-      <Image src={logo} class="header__logo" alt="Logo" />
+    <Navbar client:load />
+    <div class="header__logo_div">
+      <div class="header__logo-box">
+        <Image src={logo} class="header__logo" alt="Logo" />
+      </div>
     </div>
-    <Navbar />
   </header>
+  <main>
+    <Services />
+  </main>
 </Layout>
 <style lang="scss">
   @import "../styles/variables";
@@ -51,20 +57,37 @@ const title = "template";
     background-size: cover;
     background-position: center center;
     position: relative;
-    background-attachment: fixed;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__logo_div {
+      display: inline-block;
+      width: 100%;
+    }
 
     &__logo-box {
       @include media(mobile) {
+        text-align: center;
         padding: 50px;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+      @include media(tablet) {
+        padding: 50px;
+        text-align: center;
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
       }
       @include media(desktop) {
         position: absolute;
-        top: 15rem;
-        left: 10rem;
+        top: 10rem;
+        left: 8rem;
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -75,20 +98,16 @@ const title = "template";
     &__logo {
       @include media(mobile) {
         width: 100%;
-        height: 300px;
+        height: 40vh;
+      }
+      @include media(tablet) {
+        width: 60vw;
+        height: 40vh;
       }
       @include media(desktop) {
         width: 100%;
-        height: 25vw;
+        height: 30vw;
       }
-    }
-
-    &__text-box {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
     }
   }
 </style>

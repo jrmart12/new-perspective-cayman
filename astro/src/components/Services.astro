@@ -1,0 +1,49 @@
+---
+---
+
+<section class="services reveal">
+  <div class="title">
+    <h2>OUR SERVICES</h2>
+    <h1>What We Offer</h1>
+    <span>..........</span>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/variables";
+  @import "../styles/animations";
+  @import "../styles/mixins";
+  .services {
+    background-image: url(/public/images/background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .title {
+      margin-top: 6rem;
+      background-color: white;
+      text-align: center;
+      h1 {
+        color: $color-black;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      h2 {
+        color: $color-grey;
+        font-size: 32px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 5rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+</style>

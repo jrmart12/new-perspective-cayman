@@ -1,50 +1,51 @@
 ---
 ---
 
-<div>
-  <nav class="navbar">
-    <ul class="navigation__list">
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">Home</a>
+<nav class="navbar">
+  <ul class="navigation__list">
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">Home</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">About Us</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">Services</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="navbar-mobile">
+  <input type="checkbox" class="navbar-mobile__checkbox" id="navi-toggle" />
+
+  <label for="navi-toggle" class="navbar-mobile__button">
+    <span class="navbar-mobile__icon">&nbsp;</span>
+  </label>
+
+  <div class="navbar-mobile__background">&nbsp;</div>
+
+  <nav class="navbar-mobile__nav">
+    <ul class="navbar-mobile__list">
+      <li class="navbar-mobile__item">
+        <a href="#" class="navbar-mobile__link">Home</a>
       </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">About Us</a>
+      <li class="navbar-mobile__item">
+        <a href="#" class="navbar-mobile__link">About Us</a>
       </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">Services</a>
+      <li class="navbar-mobile__item">
+        <a href="#" class="navbar-mobile__link">Services</a>
       </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">Contact Us</a>
+      <li class="navbar-mobile__item">
+        <a href="#" class="navbar-mobile__link">Contact Us</a>
       </li>
     </ul>
   </nav>
-  <div class="navbar-mobile">
-    <input type="checkbox" class="navbar-mobile__checkbox" id="navi-toggle" />
-
-    <label for="navi-toggle" class="navbar-mobile__button">
-      <span class="navbar-mobile__icon">&nbsp;</span>
-    </label>
-
-    <div class="navbar-mobile__background">&nbsp;</div>
-
-    <nav class="navbar-mobile__nav">
-      <ul class="navbar-mobile__list">
-        <li class="navbar-mobile__item">
-          <a href="#" class="navbar-mobile__link">Home</a>
-        </li>
-        <li class="navbar-mobile__item">
-          <a href="#" class="navbar-mobile__link">About Us</a>
-        </li>
-        <li class="navbar-mobile__item">
-          <a href="#" class="navbar-mobile__link">Services</a>
-        </li>
-        <li class="navbar-mobile__item">
-          <a href="#" class="navbar-mobile__link">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
 </div>
+
+<script></script>
+
 <style lang="scss">
   @import "../styles/variables";
   @import "../styles/animations";
@@ -54,11 +55,19 @@
       display: none;
     }
     @include media(desktop) {
-      display: inline-block;
+      display: flex;
       width: 100%;
       border-bottom: 2px solid $color-white;
       padding: 3px;
       position: fixed;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      height: 70px;
+
+      .navbar.scrolled {
+        border-bottom: 2px solid $color-white;
+        background-color: $color-primary;
+      }
 
       .navigation__list {
         display: flex;
@@ -172,17 +181,20 @@
       &__link {
         &:link,
         &:visited {
-          display: inline-block;
-          font-size: 3rem;
-          font-weight: 300;
-          padding: 1rem 2rem;
+          font-size: 2rem;
+          font-weight: 500;
+          padding: 1rem 4rem;
           color: $color-white;
           text-decoration: none;
           text-transform: uppercase;
-          span {
-            margin-right: 1.5rem;
-            display: inline-block;
-          }
+          background-image: linear-gradient(
+            120deg,
+            transparent 0%,
+            transparent 50%,
+            $color-white 50%
+          );
+          background-size: 220%;
+          transition: all 0.4s;
         }
 
         &:hover,

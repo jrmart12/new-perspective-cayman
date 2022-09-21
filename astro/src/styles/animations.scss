@@ -41,3 +41,34 @@
     transform: translate(0);
   }
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-in-fwd {
+  animation: fade-in-fwd 1.5s both;
+}
+
+.fade-in-fwd2 {
+  animation: fade-in-fwd 1.5s 1.5s both;
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
