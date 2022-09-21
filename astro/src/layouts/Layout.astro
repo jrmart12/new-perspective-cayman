@@ -1,5 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
+import logo from "/public/images/logo.png";
 export interface Props {
   title: string;
 }
@@ -24,7 +25,7 @@ const { title } = Astro.props;
 
   <body>
     <div class="loading">
-      <Image src="../../public/images/logo.png" width="200" height="200" />
+      <Image src={logo} width="200" height="200" />
       <div id="loader">
         <span id="dot"></span>
         <div id="dots">
