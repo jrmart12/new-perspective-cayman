@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.1",
-    "astro": "^1.1.3"
+    "astro": "^1.1.3",
+    "swiper": "^8.4.3"
   },
   "devDependencies": {
     "@astrojs/image": "^0.4.0",

@@ -1,0 +1,214 @@
+@import "./variables";
+@import "./animations";
+@import "./mixins";
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  margin-left: -0.5rem;
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 60%;
+  margin-left: -0.5rem;
+  .swiper-wrapper {
+    margin-left: 3%;
+  }
+}
+.mySwiper1 {
+  width: 100%;
+  height: 60%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-primary-light !important;
+}
+
+.swiper-wrapper {
+  margin-left: 3.5%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.card__side {
+  height: 45rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border-color: $color-primary;
+  border-style: solid;
+  border-width: 1px;
+}
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__side--back-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__side--back-3 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card__picture--1 {
+  background-image: url(/public/images/interiorDesign.jpg);
+}
+.card__picture--2 {
+  background-image: url(/public/images/permit.jpg);
+}
+.card__picture--3 {
+  background-image: url(/public/images/renovation.jpg);
+}
+.card__picture--4 {
+  background-image: url(/public/images/renders.jpg);
+}
+.card__picture--5 {
+  background-image: url(/public/images/renovations.jpg);
+}
+.card__picture--6 {
+  background-image: url(/public/images/newBuilds.jpg);
+}
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 17rem;
+  right: 1rem;
+  width: 90%;
+}
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__heading-span--4 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__heading-span--5 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__heading-span--6 {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-dark,
+    $color-primary-light
+  );
+}
+.card__details {
+  padding-top: 3rem;
+  text-align: left;
+}
+.card__details ul {
+  list-style: none;
+  width: 76%;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+.card__price-value {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: left;
+}
