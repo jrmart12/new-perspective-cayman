@@ -17,7 +17,78 @@ import Slider from "./Slider.jsx";
   @import "../styles/mixins";
   .services {
     background-image: url(/public/images/background.png);
-    height: 110vh;
+    @include media(mobile) {
+      height: 115vh;
+      .title {
+        margin-top: 6rem;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 5rem;
+        h1 {
+          color: $color-black;
+          font-size: calc(19px + 0.390625vw);
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+        h2 {
+          color: $color-grey;
+          font-size: calc(19px + 0.390625vw);
+          font-weight: 500;
+        }
+        span {
+          font-size: 5rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    @include media(tablet) {
+      height: 115vh;
+      .title {
+        margin-top: 6rem;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 5rem;
+        h1 {
+          color: $color-black;
+          font-size: calc(19px + 0.390625vw);
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+        h2 {
+          color: $color-grey;
+          font-size: calc(19px + 0.390625vw);
+          font-weight: 500;
+        }
+        span {
+          font-size: 5rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    @include media(desktop) {
+      height: 110vh;
+      .title {
+        margin-top: 6rem;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 5rem;
+        h1 {
+          color: $color-black;
+          font-size: calc(32px + 0.390625vw);
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+        h2 {
+          color: $color-grey;
+          font-size: calc(28px + 0.390625vw);
+          font-weight: 500;
+        }
+        span {
+          font-size: 5rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -26,27 +97,5 @@ import Slider from "./Slider.jsx";
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
-    .title {
-      margin-top: 6rem;
-      background-color: white;
-      text-align: center;
-      margin-bottom: 5rem;
-      h1 {
-        color: $color-black;
-        font-size: 40px;
-        font-weight: 500;
-        margin-bottom: 0;
-      }
-      h2 {
-        color: $color-grey;
-        font-size: 32px;
-        font-weight: 500;
-      }
-      span {
-        font-size: 5rem;
-        margin-bottom: 5rem;
-      }
-    }
   }
 </style>

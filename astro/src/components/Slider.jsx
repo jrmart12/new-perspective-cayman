@@ -31,13 +31,13 @@ export default function Slider() {
   }, []);
   return (
     <>
-      {windowSize?.innerWidth >= 1235 ? (
+      {windowSize?.innerWidth >= 786 ? (
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
           slidesPerGroup={3}
-          loop={true}
-          loopFillGroupWithBlank={true}
+          loop={false}
+          loopFillGroupWithBlank={false}
           pagination={{
             clickable: true,
           }}
@@ -195,42 +195,14 @@ export default function Slider() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <div className="card">
-              <div className="card__side card__side--front">
-                <div className="card__picture card__picture--6">&nbsp;</div>
-                <h4 className="card__heading">
-                  <span className="card__heading-span card__heading-span--6">
-                    New Builds
-                  </span>
-                </h4>
-                <div className="card__details">
-                  <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card__side card__side--back card__side--back-2">
-                <div className="card__cta">
-                  <div className="card__price-box">
-                    <p className="card__price-only">Hello</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
         </Swiper>
-      ) : windowSize?.innerWidth <= 813 ? (
+      ) : windowSize?.innerWidth <= 425 ? (
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
           slidesPerGroup={1}
-          loop={true}
-          loopFillGroupWithBlank={true}
+          loop={false}
+          loopFillGroupWithBlank={false}
           pagination={{
             clickable: true,
           }}
@@ -388,42 +360,14 @@ export default function Slider() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <div className="card">
-              <div className="card__side card__side--front">
-                <div className="card__picture card__picture--6">&nbsp;</div>
-                <h4 className="card__heading">
-                  <span className="card__heading-span card__heading-span--6">
-                    New Builds
-                  </span>
-                </h4>
-                <div className="card__details">
-                  <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card__side card__side--back card__side--back-2">
-                <div className="card__cta">
-                  <div className="card__price-box">
-                    <p className="card__price-only">Hello</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
         </Swiper>
       ) : (
         <Swiper
           slidesPerView={2}
           spaceBetween={5}
           slidesPerGroup={2}
-          loop={true}
-          loopFillGroupWithBlank={true}
+          loop={false}
+          loopFillGroupWithBlank={false}
           pagination={{
             clickable: true,
           }}
@@ -561,34 +505,6 @@ export default function Slider() {
                 <h4 className="card__heading">
                   <span className="card__heading-span card__heading-span--5">
                     Renovations
-                  </span>
-                </h4>
-                <div className="card__details">
-                  <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card__side card__side--back card__side--back-2">
-                <div className="card__cta">
-                  <div className="card__price-box">
-                    <p className="card__price-only">Hello</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <div className="card">
-              <div className="card__side card__side--front">
-                <div className="card__picture card__picture--6">&nbsp;</div>
-                <h4 className="card__heading">
-                  <span className="card__heading-span card__heading-span--6">
-                    New Builds
                   </span>
                 </h4>
                 <div className="card__details">
