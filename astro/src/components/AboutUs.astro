@@ -1,0 +1,223 @@
+---
+import { Image } from "@astrojs/image/components";
+import image from "/public/images/about.jpg";
+import location from "/public/images/location.png";
+---
+
+<section class="about">
+  <div class="aboutSection">
+    <div class="image revealImage">
+      <Image src={image} class="aboutImage revealImage-inner" alt="Logo" />
+    </div>
+    <div class="aboutCompany revealText">
+      <div class="title revealText-inner">
+        <h2>ABOUT COMPANY</h2>
+        <h1>New Perspective Ltd.</h1>
+      </div>
+      <p class="revealText-inner">
+        We are Architects designing with a new perspective, making our designs
+        become one with their surroundings and adapting to their location in the
+        best way. Each project is elaborated with passion, enriched with every
+        detail and in hand with innovation. We ensure a successful design and
+        legal.
+      </p>
+    </div>
+  </div>
+  <div class="location">
+    <Image src={location} class="locationImage" alt="Logo" />
+    <h2>Cayman Islands (Grand Cayman, Little Cayman, Cayman Brac)</h2>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/variables";
+  @import "../styles/animations";
+  @import "../styles/mixins";
+
+  @include media(mobile) {
+    .revealText-inner {
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: 1s all ease;
+    }
+    .about {
+      background-image: url(/public/images/background.png);
+      background-size: cover;
+      background-position: center center;
+      height: 99vh;
+      display: flex;
+      flex-direction: column;
+      .aboutSection {
+        height: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        .aboutCompany {
+          width: 100%;
+          .title {
+            padding: 1rem;
+            margin-bottom: 5rem;
+            background-color: $color-white;
+            text-align: center;
+            h1 {
+              color: $color-black;
+              font-size: calc(19px + 0.390625vw);
+              font-weight: 500;
+              margin-bottom: 0;
+            }
+            h2 {
+              color: $color-grey;
+              font-size: calc(15px + 0.390625vw);
+              font-weight: 500;
+            }
+          }
+          p {
+            font-weight: 100;
+            font-size: calc(12px + 0.390625vw);
+            padding: 3rem;
+            background-color: $color-white;
+          }
+        }
+        .image {
+          width: 100%;
+          margin-top: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .aboutImage {
+            height: 200px;
+            width: 200px;
+            border: 2px solid $color-primary;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .location {
+        height: 10%;
+        width: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .locationImage {
+          height: 15px;
+          width: 12px;
+          margin-right: 1rem;
+        }
+        h2 {
+          background-color: white;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          font-weight: 100;
+          font-size: calc(10px + 0.390625vw);
+        }
+      }
+    }
+  }
+  @include media(tablet) {
+  }
+  @include media(desktop) {
+    .about {
+      background-image: url(/public/images/background.png);
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      .aboutSection {
+        height: 80%;
+        display: flex;
+        .aboutCompany {
+          width: 50%;
+          margin-top: 10rem;
+          .title {
+            background-color: rgba(240, 248, 255, 0);
+            margin-bottom: 5rem;
+            padding-left: 10rem;
+            padding-right: 19.5rem;
+            h1 {
+              color: $color-black;
+              font-size: calc(24px + 0.390625vw);
+              font-weight: 500;
+              margin-bottom: 0;
+            }
+            h2 {
+              color: $color-grey;
+              font-size: calc(19px + 0.390625vw);
+              font-weight: 500;
+            }
+          }
+          p {
+            font-weight: 100;
+            font-size: calc(15px + 0.390625vw);
+            padding-left: 10rem;
+            padding-right: 22rem;
+          }
+        }
+        .image {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .aboutImage {
+            height: 500px;
+            width: 500px;
+            border: 2px solid $color-primary;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .location {
+        height: 10%;
+        width: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .locationImage {
+          height: 25px;
+          width: 20px;
+          margin-right: 1rem;
+        }
+        h2 {
+          background-color: white;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          font-weight: 100;
+          font-size: calc(19px + 0.390625vw);
+        }
+      }
+    }
+    .revealText-inner {
+      opacity: 0;
+      transform: translateX(150px);
+      transition: 1s all ease;
+    }
+  }
+  .revealText-inner.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .revealImage {
+    position: relative;
+  }
+  .revealImage-inner {
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: 1s all ease;
+  }
+  .revealImage-inner.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .revealImage.active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+</style>
