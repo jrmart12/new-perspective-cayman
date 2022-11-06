@@ -1,0 +1,402 @@
+---
+import { Image } from "@astrojs/image/components";
+import address from "/public/images/address.png";
+import mail from "/public/images/mail.png";
+import phone from "/public/images/phone.png";
+import facebook from "/public/images/facebook.png";
+import instagram from "/public/images/instagram.png";
+---
+
+<section class="contact">
+  <div class="appointment">
+    <div class="title">
+      <h1>Get an Appointment</h1>
+    </div>
+    <div class="inputs">
+      <div class="basic">
+        <div class="form__group field">
+          <input
+            type="text"
+            class="form__field"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <label for="name" class="form__label">Your Name</label>
+        </div>
+        <div class="form__group field">
+          <input
+            type="text"
+            class="form__field"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="email" class="form__label">Your Email</label>
+        </div>
+        <div class="form__group field">
+          <input
+            type="text"
+            class="form__field"
+            placeholder="Service"
+            name="service"
+            id="service"
+            required
+          />
+          <label for="service" class="form__label">Service</label>
+        </div>
+        <div class="form__group field">
+          <input
+            type="date"
+            class="form__field"
+            placeholder="Date"
+            name="date"
+            id="date"
+            required
+          />
+          <label for="date" class="form__label">Date</label>
+        </div>
+      </div>
+      <div class="message">
+        <textarea class="comment" placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="button">
+      <button>Send Message</button>
+    </div>
+  </div>
+  <div class="details">
+    <h2>[ OUR CONTACT DETAILS ]</h2>
+    <h1>Let's Start a Project</h1>
+    <p>
+      Give us a call or drop by anytime, we endeavour to answer all enquiries
+      within 24 hours on business days. We will be happy to answer your
+      questions.
+    </p>
+    <div class="info">
+      <Image src={address} alt="address" height={52} width={33} />
+      <div class="text">
+        <h3>Our Address:</h3>
+        <p>The Village, Dr. Roys Drive, George Town, Grand Cayman</p>
+      </div>
+    </div>
+    <div class="info">
+      <Image src={mail} alt="mail" height={30} width={40} />
+      <div class="text">
+        <h3>Our MailBox:</h3>
+        <a href="mailto: archnewperspective@gmail.com"
+          >archnewperspective@gmail.com</a
+        >
+      </div>
+    </div>
+    <div class="info">
+      <Image src={phone} alt="phone" height={40} width={40} />
+      <div class="text">
+        <h3>Our Phone:</h3>
+        <a href="tel:+1(345)927-4463">+1 (345) 927-4463</a>
+      </div>
+    </div>
+    <div class="links">
+      <a href="https://es-la.facebook.com/"
+        ><Image src={facebook} alt="facebook" height={30} width={30} />
+      </a>
+      <a href="https://www.instagram.com/"
+        ><Image src={instagram} alt="instagram" height={30} width={30} />
+      </a>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../styles/variables";
+  @import "../styles/animations";
+  @import "../styles/mixins";
+
+  .contact {
+    background-image: url(/public/images/background.png);
+    background-size: cover;
+    background-position: center center;
+    height: 99vh;
+    display: flex;
+    @include media(mobile) {
+      height: 100%;
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+      padding-bottom: 5rem;
+    }
+    @include media(tablet) {
+      height: 100%;
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+      padding-bottom: 5rem;
+    }
+    @include media(desktop) {
+      padding-bottom: 2rem;
+      flex-direction: row;
+    }
+    .appointment {
+      @include media(mobile) {
+        width: 99%;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        border: 2px solid $color-primary;
+      }
+      @include media(tablet) {
+        width: 99%;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        border: 2px solid $color-primary;
+      }
+      @include media(desktop) {
+        width: 60%;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        border: 2px solid $color-primary;
+      }
+      display: flex;
+      flex-direction: column;
+
+      background-color: $color-white;
+      height: min-content;
+
+      .button {
+        text-align: center;
+        button {
+          margin-top: 4rem;
+          border: 2px solid $color-primary;
+          background-color: $color-secondary-dark;
+          color: $color-white;
+          border-radius: 40px;
+          height: 50px;
+          width: 200px;
+          margin-bottom: 4rem;
+          cursor: pointer;
+        }
+      }
+      .title h1 {
+        color: $color-black;
+        font-size: calc(24px + 0.390625vw);
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-left: 4.5rem;
+        margin-top: 5rem;
+      }
+      .inputs {
+        @include media(mobile) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .basic {
+            width: 100%;
+          }
+          .message {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+        @include media(tablet) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .basic {
+            width: 100%;
+          }
+          .message {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+        @include media(desktop) {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          .basic {
+            width: 50%;
+          }
+          .message {
+            width: 50%;
+          }
+        }
+      }
+      .inputs .message {
+        .comment {
+          resize: none;
+          height: 200px;
+          width: 80%;
+          border-radius: 10px;
+          margin-top: 3rem;
+          border-color: $color-primary;
+          padding: 20px;
+        }
+        .comment:focus {
+          border-color: $color-primary;
+          outline: none !important;
+        }
+      }
+      .inputs .basic {
+        .form__group {
+          position: relative;
+          padding: 15px 0 0;
+          margin-top: 10px;
+          width: 70%;
+          margin-bottom: 2rem;
+          margin-left: 5rem;
+        }
+
+        .form__field {
+          font-family: inherit;
+          width: 100%;
+          border: 0;
+          border-bottom: 1px solid $color-primary;
+          outline: 0;
+          font-size: 1.3rem;
+          color: $color-black;
+          padding: 7px 0;
+          background: transparent;
+          transition: border-color 0.2s;
+          padding-left: 2rem;
+
+          &::placeholder {
+            color: transparent;
+          }
+
+          &:placeholder-shown ~ .form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 20px;
+          }
+        }
+
+        .form__label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1.3rem;
+          color: $color-grey;
+          padding-left: 2rem;
+        }
+
+        .form__field:focus {
+          ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            color: $color-grey;
+            font-size: 1.3rem;
+          }
+          border-width: 1px;
+          border-image: linear-gradient(
+            to right,
+            $color-primary,
+            $color-primary
+          );
+          border-image-slice: 1;
+        }
+        /* reset input */
+        .form__field {
+          &:required,
+          &:invalid {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .details {
+      @include media(mobile) {
+        width: 100%;
+        margin-top: 10rem;
+        align-items: center;
+        .info {
+          width: 100%;
+        }
+      }
+      @include media(tablet) {
+        width: 100%;
+        margin-top: 10rem;
+        align-items: center;
+      }
+      @include media(desktop) {
+        width: 40%;
+        p {
+          padding-right: 6rem;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      background-color: $color-white;
+      height: min-content;
+      margin-top: 3rem;
+      h2 {
+        color: $color-grey;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      h1 {
+        margin-top: 5px;
+        color: $color-black;
+        font-size: calc(24px + 0.390625vw);
+        font-weight: 500;
+      }
+      p {
+        margin-top: 5px;
+        color: $color-black;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 200;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        img {
+          margin-right: 2rem;
+        }
+        .text {
+          h3 {
+            margin-top: 0;
+            color: $color-black;
+            font-size: calc(12px + 0.390625vw);
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+          a {
+            margin-top: 5px;
+            color: $color-black;
+            font-size: calc(12px + 0.390625vw);
+            font-weight: 200;
+            padding-right: 6rem;
+            text-decoration: none;
+          }
+          a:hover {
+            color: $color-primary;
+            cursor: pointer;
+          }
+        }
+      }
+      .links {
+        display: flex;
+        margin-top: 5rem;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+        width: 95%;
+        a {
+          cursor: pointer;
+        }
+        img {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+</style>

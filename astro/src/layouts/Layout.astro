@@ -1,6 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
-import logo from "/public/images/logo.png";
+import logo from "/public/images/logo_np.png";
 export interface Props {
   title: string;
 }
@@ -29,7 +29,9 @@ const { title } = Astro.props;
 
   <body>
     <div class="loading">
-      <Image src={logo} width="200" height="200" />
+      <div class="image">
+        <Image src={logo} width={200} height={200} />
+      </div>
       <div id="loader">
         <span id="dot"></span>
         <div id="dots">
@@ -68,14 +70,14 @@ const { title } = Astro.props;
       .body {
         visibility: hidden;
       }
-
-      .loading img {
+      .image {
         position: absolute;
-        top: 50%;
         left: 50%;
-        margin: -230px 0 0 -105px;
+        width: 200px;
+        margin: 160px 0 0 -105px;
+        height: 183px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         background-color: black;
-        border-radius: 100px;
       }
       #loader {
         position: absolute;

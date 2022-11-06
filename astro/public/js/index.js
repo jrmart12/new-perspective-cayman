@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
     document.querySelector(".loading").style.visibility = "hidden";
     document.querySelector(".body").style.display = "block";
     document.querySelector(".body").style.visibility = "visible";
-  }, 3000);
+  }, 2000);
   document.querySelector(".body").style.display = "none";
   document.querySelector(".loading").style.visibility = "visible";
 });
@@ -80,3 +80,5 @@ function revealImage() {
 }
 
 window.addEventListener("scroll", revealImage);
+
+document.getElementById("date").valueAsDate = new Date();
