@@ -76,14 +76,26 @@ import instagram from "/public/images/Instagram.png";
       questions.
     </p>
     <div class="info">
-      <Image src={address} alt="address" height={52} width={33} />
+      <lord-icon
+        src="https://cdn.lordicon.com/oaflahpk.json"
+        trigger="hover"
+        colors="primary:#b29758"
+        style="width:80px;height:80px"
+        class="icon"
+      />
       <div class="text">
         <h3>Our Address:</h3>
         <p>The Village, Dr. Roys Drive, George Town, Grand Cayman</p>
       </div>
     </div>
     <div class="info">
-      <Image src={mail} alt="mail" height={30} width={40} />
+      <lord-icon
+        src="https://cdn.lordicon.com/gzmgulpl.json"
+        trigger="hover"
+        colors="outline:#b29758,primary:#b29758,secondary:#ebe6ef"
+        style="width:80px;height:80px"
+        class="icon"
+      />
       <div class="text">
         <h3>Our MailBox:</h3>
         <a href="mailto: archnewperspective@gmail.com"
@@ -92,7 +104,13 @@ import instagram from "/public/images/Instagram.png";
       </div>
     </div>
     <div class="info">
-      <Image src={phone} alt="phone" height={40} width={40} />
+      <lord-icon
+        src="https://cdn.lordicon.com/kjkiqtxg.json"
+        trigger="hover"
+        colors="outline:#121331,primary:#646e78,secondary:#b29758,tertiary:#ebe6ef"
+        style="width:80px;height:80px"
+        class="icon"
+      />
       <div class="text">
         <h3>Our Phone:</h3>
         <a href="tel:+1(345)927-4463">+1 (345) 927-4463</a>
@@ -359,8 +377,10 @@ import instagram from "/public/images/Instagram.png";
         display: flex;
         align-items: center;
         margin-bottom: 3rem;
-        img {
+        .icon {
           margin-right: 2rem;
+        }
+        .phone {
         }
         .text {
           h3 {
