@@ -4,6 +4,7 @@ import "../styles/navbar.scss";
 export default function Navbar() {
   let listener = null;
   const [scrollState, setScrollState] = useState("top");
+  const [close, setclose] = useState(false);
 
   useEffect(() => {
     listener = document.addEventListener("scroll", (e) => {
@@ -23,22 +24,22 @@ export default function Navbar() {
       <nav className={`navbar navbar-${scrollState}`}>
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#home" className="navigation__link">
               Home
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#aboutUs" className="navigation__link">
               About Us
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#services" className="navigation__link">
               Services
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#contactUs" className="navigation__link">
               Contact Us
             </a>
           </li>
@@ -49,6 +50,8 @@ export default function Navbar() {
           type="checkbox"
           className="navbar-mobile__checkbox"
           id="navi-toggle"
+          checked={close}
+          onChange={() => setclose(!close)}
         />
 
         <label
@@ -62,23 +65,35 @@ export default function Navbar() {
 
         <nav className="navbar-mobile__nav">
           <ul className="navbar-mobile__list">
-            <li className="navbar-mobile__item">
-              <a href="#" className="navbar-mobile__link">
+            <li
+              className="navbar-mobile__item"
+              onClick={() => setclose(!close)}
+            >
+              <a href="#home" className="navbar-mobile__link">
                 Home
               </a>
             </li>
-            <li className="navbar-mobile__item">
-              <a href="#" className="navbar-mobile__link">
+            <li
+              className="navbar-mobile__item"
+              onClick={() => setclose(!close)}
+            >
+              <a href="#aboutUs" className="navbar-mobile__link">
                 About Us
               </a>
             </li>
-            <li className="navbar-mobile__item">
-              <a href="#" className="navbar-mobile__link">
+            <li
+              className="navbar-mobile__item"
+              onClick={() => setclose(!close)}
+            >
+              <a href="#services" className="navbar-mobile__link">
                 Services
               </a>
             </li>
-            <li className="navbar-mobile__item">
-              <a href="#" className="navbar-mobile__link">
+            <li
+              className="navbar-mobile__item"
+              onClick={() => setclose(!close)}
+            >
+              <a href="#contactUs" className="navbar-mobile__link">
                 Contact Us
               </a>
             </li>
