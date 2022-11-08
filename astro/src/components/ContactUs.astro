@@ -8,65 +8,67 @@ import instagram from "/public/images/Instagram.png";
 ---
 
 <section class="contact">
-  <div class="appointment">
-    <div class="title">
-      <h1>Get an Appointment</h1>
-    </div>
-    <div class="inputs">
-      <div class="basic">
-        <div class="form__group field">
-          <input
-            type="text"
-            class="form__field"
-            placeholder="Name"
-            name="name"
-            id="name"
-            required
-          />
-          <label for="name" class="form__label">Your Name</label>
+  <form name="contact" method="POST" data-netlify="true">
+    <div class="appointment">
+      <div class="title">
+        <h1>Get an Appointment</h1>
+      </div>
+
+      <div class="inputs">
+        <div class="basic">
+          <div class="form__group field">
+            <input
+              type="text"
+              class="form__field"
+              placeholder="Name"
+              name="name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Your Name</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="text"
+              class="form__field"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
+            <label for="email" class="form__label">Your Email</label>
+          </div>
+          <div class="form__group field">
+            <select name="service" id="service" class="form__field" required>
+              <option value="permit">Permit</option>
+              <option value="interior design">Interior Design</option>
+              <option value="design">Design</option>
+              <option value="renders">Renders</option>
+              <option value="renovations">Renovations</option>
+            </select>
+            <label for="service" class="form__label">Service</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="date"
+              class="form__field"
+              placeholder="Date"
+              name="date"
+              id="date"
+              required
+            />
+            <label for="date" class="form__label">Date</label>
+          </div>
         </div>
-        <div class="form__group field">
-          <input
-            type="text"
-            class="form__field"
-            placeholder="Email"
-            name="email"
-            id="email"
-            required
-          />
-          <label for="email" class="form__label">Your Email</label>
-        </div>
-        <div class="form__group field">
-          <input
-            type="text"
-            class="form__field"
-            placeholder="Service"
-            name="service"
-            id="service"
-            required
-          />
-          <label for="service" class="form__label">Service</label>
-        </div>
-        <div class="form__group field">
-          <input
-            type="date"
-            class="form__field"
-            placeholder="Date"
-            name="date"
-            id="date"
-            required
-          />
-          <label for="date" class="form__label">Date</label>
+        <div class="message">
+          <textarea class="comment" placeholder="Message"></textarea>
         </div>
       </div>
-      <div class="message">
-        <textarea class="comment" placeholder="Message"></textarea>
+      <div class="button">
+        <button type="submit">Send Message</button>
       </div>
     </div>
-    <div class="button">
-      <button>Send Message</button>
-    </div>
-  </div>
+  </form>
   <div class="details">
     <h2>[ OUR CONTACT DETAILS ]</h2>
     <h1>Let's Start a Project</h1>
