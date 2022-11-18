@@ -19,10 +19,9 @@ import { website } from "../lib/api.js";
 import BannerContactUs from "../components/BannerContactUs.astro";
 const response = await getSanityContent({ query: website });
 const websites = response.allWebsite;
-const title = "template";
 ---
 
-<Layout title={title}>
+<Layout>
   <!-- {
     websites.map((website) => (
       <main>
