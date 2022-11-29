@@ -56,10 +56,15 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>Advice on interior layout</li>
-                    <li>2D or 3D interior design plans</li>
-                    <li>Selection of furnitures</li>
-                    <li>Project timelines</li>
+                    <li />
+                    <li>The art of enhancing the interior.</li>
+                    <li>
+                      We analyze, visualize and transform the interior of a
+                      house, apartment, office and more.{" "}
+                    </li>
+                    <li>
+                      Our goal is to achieve both aesthetics and functionality.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -95,10 +100,13 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>Planning Department and BCU.</li>
+                    <li>
+                      We elaborate the set of plans and manage the process until
+                      approval.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -122,10 +130,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      the art of planning structures with aestheticism and
+                      function in mind.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -151,10 +161,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      We work on the best realistic vision of your project, by
+                      delivering renders and 3D animations and virtual tours
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -179,10 +191,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li>We take the challenge!</li>
+                    <li>
+                      Transforming a space and its existing problems by bringing
+                      out its full potential to the best result for future
+                      needs.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -221,10 +235,15 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>Advice on interior layout</li>
-                    <li>2D or 3D interior design plans</li>
-                    <li>Selection of furnitures</li>
-                    <li>Project timelines</li>
+                    <li />
+                    <li>The art of enhancing the interior.</li>
+                    <li>
+                      We analyze, visualize and transform the interior of a
+                      house, apartment, office and more.{" "}
+                    </li>
+                    <li>
+                      Our goal is to achieve both aesthetics and functionality.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -260,10 +279,13 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>Planning Department and BCU.</li>
+                    <li>
+                      We elaborate the set of plans and manage the process until
+                      approval.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -287,10 +309,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      the art of planning structures with aestheticism and
+                      function in mind.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -316,10 +340,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      We work on the best realistic vision of your project, by
+                      delivering renders and 3D animations and virtual tours
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -344,10 +370,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li>We take the challenge!</li>
+                    <li>
+                      Transforming a space and its existing problems by bringing
+                      out its full potential to the best result for future
+                      needs.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -386,10 +414,15 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>Advice on interior layout</li>
-                    <li>2D or 3D interior design plans</li>
-                    <li>Selection of furnitures</li>
-                    <li>Project timelines</li>
+                    <li />
+                    <li>The art of enhancing the interior.</li>
+                    <li>
+                      We analyze, visualize and transform the interior of a
+                      house, apartment, office and more.{" "}
+                    </li>
+                    <li>
+                      Our goal is to achieve both aesthetics and functionality.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -425,10 +458,13 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>Planning Department and BCU.</li>
+                    <li>
+                      We elaborate the set of plans and manage the process until
+                      approval.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -452,10 +488,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      the art of planning structures with aestheticism and
+                      function in mind.
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -481,10 +519,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li />
+                    <li>
+                      We work on the best realistic vision of your project, by
+                      delivering renders and 3D animations and virtual tours
+                    </li>
+                    <li />
                   </ul>
                 </div>
               </div>
@@ -498,7 +538,6 @@ export default function Slider() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <div className="card">
               <div className="card__side card__side--front">
                 <div className="card__picture card__picture--5">&nbsp;</div>
@@ -509,10 +548,12 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
-                    <li>hello</li>
+                    <li>We take the challenge!</li>
+                    <li>
+                      Transforming a space and its existing problems by bringing
+                      out its full potential to the best result for future
+                      needs.
+                    </li>
                   </ul>
                 </div>
               </div>

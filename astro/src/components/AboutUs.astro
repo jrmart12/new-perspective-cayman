@@ -23,9 +23,22 @@ import location from "/public/images/location.png";
       </p>
     </div>
   </div>
+
   <div class="location">
-    <Image src={location} class="locationImage" alt="Logo" />
-    <h2>Cayman Islands (Grand Cayman, Little Cayman, Cayman Brac)</h2>
+    <h2>
+      <Image src={location} class="locationImage" alt="Logo" />
+      Cayman Islands (Grand Cayman, Little Cayman, Cayman Brac)&nbsp; &nbsp;&nbsp;
+      &nbsp; <Image src={location} class="locationImage" alt="Logo" /> Roatan (Islas
+      de la Bahia) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
+        class="locationImage"
+        alt="Logo"
+      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
+        class="locationImage"
+        alt="Logo"
+      />San Pedro Sula (Cortes, Honduras)
+    </h2>
   </div>
 </section>
 
@@ -94,11 +107,14 @@ import location from "/public/images/location.png";
 
       .location {
         height: 10%;
-        width: auto;
+        width: 100%;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
 
         .locationImage {
           height: 15px;
@@ -111,6 +127,27 @@ import location from "/public/images/location.png";
           padding-bottom: 2rem;
           font-weight: 100;
           font-size: calc(10px + 0.390625vw);
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          /* Apply animation to this element */
+          // -moz-animation: demo-1 25s linear infinite;
+          // -webkit-animation: demo-1 25s linear infinite;
+          animation: demo-1 25s linear infinite;
+          animation-fill-mode: forwards;
+        }
+        /* Move it (define the animation) */
+        @keyframes demo-1 {
+          0% {
+            -moz-transform: translateX(100%); /* Firefox bug fix */
+            -webkit-transform: translateX(100%); /* Firefox bug fix */
+            transform: translateX(100%);
+          }
+          100% {
+            -moz-transform: translateX(-100%); /* Firefox bug fix */
+            -webkit-transform: translateX(-100%); /* Firefox bug fix */
+            transform: translateX(-100%);
+          }
         }
       }
     }
@@ -171,7 +208,8 @@ import location from "/public/images/location.png";
 
       .location {
         height: 10%;
-        width: auto;
+        width: 78%;
+        margin-left: 11%;
         text-align: center;
         display: flex;
         justify-content: center;

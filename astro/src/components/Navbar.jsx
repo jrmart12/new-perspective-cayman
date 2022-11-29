@@ -30,7 +30,7 @@ export default function Navbar() {
           </li>
           <li className="navigation__item">
             <a href="#aboutUs" className="navigation__link">
-              About Us
+              About
             </a>
           </li>
           <li className="navigation__item">
@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
           <li className="navigation__item">
             <a href="#contactUs" className="navigation__link">
-              Contact Us
+              Contact
             </a>
           </li>
         </ul>
@@ -78,7 +78,7 @@ export default function Navbar() {
               onClick={() => setclose(!close)}
             >
               <a href="#aboutUs" className="navbar-mobile__link">
-                About Us
+                About
               </a>
             </li>
             <li
@@ -94,7 +94,7 @@ export default function Navbar() {
               onClick={() => setclose(!close)}
             >
               <a href="#contactUs" className="navbar-mobile__link">
-                Contact Us
+                Contact
               </a>
             </li>
           </ul>

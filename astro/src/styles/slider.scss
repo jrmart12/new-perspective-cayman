@@ -5,7 +5,7 @@
 @include media(mobile) {
   .mySwiper1 {
     width: 100%;
-    height: 50rem;
+    height: 100%;
   }
 
   .swiper-pagination-bullet-active {
@@ -36,7 +36,7 @@
   }
 
   .card__side {
-    height: 45rem;
+    height: 60rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -210,7 +210,7 @@
 
   .mySwiper2 {
     width: 100%;
-    height: 42%;
+    height: 50%;
   }
 
   .swiper-pagination-bullet-active {
@@ -241,7 +241,7 @@
   }
 
   .card__side {
-    height: 45rem;
+    height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -367,7 +367,7 @@
     );
   }
   .card__details {
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-align: left;
   }
   .card__details ul {
@@ -567,7 +567,7 @@
     );
   }
   .card__details {
-    padding-top: 3rem;
+    padding-top: 0rem;
     text-align: left;
   }
   .card__details ul {
