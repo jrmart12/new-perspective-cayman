@@ -56,15 +56,14 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li />
-                    <li>The art of enhancing the interior.</li>
+                    <li></li>
                     <li>
-                      We analyze, visualize and transform the interior of a
-                      house, apartment, office and more.{" "}
+                      The art of enhancing the interior. We analyze, visualize
+                      and transform the interior of a house, apartment, office
+                      and more. Our goal is to achieve both aesthetics and
+                      functionality.
                     </li>
-                    <li>
-                      Our goal is to achieve both aesthetics and functionality.
-                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -101,10 +100,9 @@ export default function Slider() {
                 <div className="card__details">
                   <ul>
                     <li />
-                    <li>Planning Department and BCU.</li>
                     <li>
-                      We elaborate the set of plans and manage the process until
-                      approval.
+                      Planning Department and BCU. We elaborate the set of plans
+                      and manage the process until approval.
                     </li>
                     <li />
                   </ul>
@@ -197,6 +195,7 @@ export default function Slider() {
                       out its full potential to the best result for future
                       needs.
                     </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -235,15 +234,14 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li />
-                    <li>The art of enhancing the interior.</li>
+                    <li></li>
                     <li>
-                      We analyze, visualize and transform the interior of a
-                      house, apartment, office and more.{" "}
+                      The art of enhancing the interior. We analyze, visualize
+                      and transform the interior of a house, apartment, office
+                      and more. Our goal is to achieve both aesthetics and
+                      functionality.
                     </li>
-                    <li>
-                      Our goal is to achieve both aesthetics and functionality.
-                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -280,10 +278,9 @@ export default function Slider() {
                 <div className="card__details">
                   <ul>
                     <li />
-                    <li>Planning Department and BCU.</li>
                     <li>
-                      We elaborate the set of plans and manage the process until
-                      approval.
+                      Planning Department and BCU. We elaborate the set of plans
+                      and manage the process until approval.
                     </li>
                     <li />
                   </ul>
@@ -414,15 +411,14 @@ export default function Slider() {
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li />
-                    <li>The art of enhancing the interior.</li>
+                    <li></li>
                     <li>
-                      We analyze, visualize and transform the interior of a
-                      house, apartment, office and more.{" "}
+                      The art of enhancing the interior. We analyze, visualize
+                      and transform the interior of a house, apartment, office
+                      and more. Our goal is to achieve both aesthetics and
+                      functionality.
                     </li>
-                    <li>
-                      Our goal is to achieve both aesthetics and functionality.
-                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -459,10 +455,9 @@ export default function Slider() {
                 <div className="card__details">
                   <ul>
                     <li />
-                    <li>Planning Department and BCU.</li>
                     <li>
-                      We elaborate the set of plans and manage the process until
-                      approval.
+                      Planning Department and BCU. We elaborate the set of plans
+                      and manage the process until approval.
                     </li>
                     <li />
                   </ul>
