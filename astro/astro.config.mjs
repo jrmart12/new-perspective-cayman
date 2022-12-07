@@ -7,6 +7,16 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://newperspectivecayman.com",
-  integrations: [react(), image(), mdx(), sitemap(), compress()],
+  site: "http://newperspectivecayman.com/",
+  integrations: [
+    react(),
+    image(),
+    mdx(),
+    sitemap(),
+    compress({
+      css: false,
+      html: false,
+      js: false,
+    }),
+  ],
 });
