@@ -26,8 +26,22 @@ import Text from "./Text.jsx";
   </div>
 
   <div class="location">
-    <Image src={location} class="locationImage" alt="Logo" />
-    <Text client:load />
+    <!-- <Image src={location} class="locationImage" alt="Logo" />
+    <Text client:load /> -->
+    <h2>
+      <Image src={location} class="locationImage" alt="Logo" />
+      Cayman Islands (Grand Cayman, Little Cayman, Cayman Brac)&nbsp; &nbsp;&nbsp;
+      &nbsp; <Image src={location} class="locationImage" alt="Logo" /> Roatan (Islas
+      de la Bahia) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
+        class="locationImage"
+        alt="Logo"
+      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
+        class="locationImage"
+        alt="Logo"
+      />San Pedro Sula (Cortes, Honduras)
+    </h2>
   </div>
 </section>
 
@@ -116,6 +130,27 @@ import Text from "./Text.jsx";
           padding-bottom: 2rem;
           font-weight: 100;
           font-size: calc(10px + 0.390625vw);
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          /* Apply animation to this element */
+          // -moz-animation: demo-1 25s linear infinite;
+          // -webkit-animation: demo-1 25s linear infinite;
+          animation: demo-1 25s linear infinite;
+          animation-fill-mode: forwards;
+        }
+        /* Move it (define the animation) */
+        @keyframes demo-1 {
+          0% {
+            -moz-transform: translateX(100%); /* Firefox bug fix */
+            -webkit-transform: translateX(100%); /* Firefox bug fix */
+            transform: translateX(100%);
+          }
+          100% {
+            -moz-transform: translateX(-100%); /* Firefox bug fix */
+            -webkit-transform: translateX(-100%); /* Firefox bug fix */
+            transform: translateX(-100%);
+          }
         }
       }
     }
@@ -125,7 +160,7 @@ import Text from "./Text.jsx";
   @include media(desktop) {
     .about {
       background-image: url(/public/images/background.png);
-      height: 90vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       padding-bottom: 5rem;
