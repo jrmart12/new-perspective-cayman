@@ -130,8 +130,8 @@ export default function Slider() {
                   <ul>
                     <li />
                     <li>
-                      the art of planning structures with aestheticism and
-                      function in mind.
+                      The art of creating a space with aestheticism and
+                      functionality in mind. We get creative!
                     </li>
                     <li />
                   </ul>
@@ -162,7 +162,7 @@ export default function Slider() {
                     <li />
                     <li>
                       We work on the best realistic vision of your project, by
-                      delivering renders and 3D animations and virtual tours
+                      delivering renders, 3D animations or virtual tours.
                     </li>
                     <li />
                   </ul>
@@ -191,9 +191,39 @@ export default function Slider() {
                   <ul>
                     <li>We take the challenge!</li>
                     <li>
-                      Transforming a space and its existing problems by bringing
-                      out its full potential to the best result for future
+                      We transform a space and its existing problems by bringing
+                      out its full potential to the best result for your future
                       needs.
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-2">
+                <div className="card__cta">
+                  <div className="card__price-box">
+                    <p className="card__price-only">Hello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="card">
+              <div className="card__side card__side--front">
+                <div className="card__picture card__picture--6">&nbsp;</div>
+                <h4 className="card__heading">
+                  <span className="card__heading-span card__heading-span--5">
+                    Cabinets
+                  </span>
+                </h4>
+                <div className="card__details">
+                  <ul>
+                    <li></li>
+                    <li>
+                      We personalize your kitchen cabinets, pantry room, or
+                      closets guided by your needs and our criteria.
                     </li>
                     <li></li>
                   </ul>
@@ -308,8 +338,8 @@ export default function Slider() {
                   <ul>
                     <li />
                     <li>
-                      the art of planning structures with aestheticism and
-                      function in mind.
+                      The art of creating a space with aestheticism and
+                      functionality in mind. We get creative!
                     </li>
                     <li />
                   </ul>
@@ -340,7 +370,7 @@ export default function Slider() {
                     <li />
                     <li>
                       We work on the best realistic vision of your project, by
-                      delivering renders and 3D animations and virtual tours
+                      delivering renders, 3D animations or virtual tours.
                     </li>
                     <li />
                   </ul>
@@ -369,10 +399,40 @@ export default function Slider() {
                   <ul>
                     <li>We take the challenge!</li>
                     <li>
-                      Transforming a space and its existing problems by bringing
-                      out its full potential to the best result for future
+                      We transform a space and its existing problems by bringing
+                      out its full potential to the best result for your future
                       needs.
                     </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-2">
+                <div className="card__cta">
+                  <div className="card__price-box">
+                    <p className="card__price-only">Hello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="card">
+              <div className="card__side card__side--front">
+                <div className="card__picture card__picture--6">&nbsp;</div>
+                <h4 className="card__heading">
+                  <span className="card__heading-span card__heading-span--5">
+                    Cabinets
+                  </span>
+                </h4>
+                <div className="card__details">
+                  <ul>
+                    <li></li>
+                    <li>
+                      We personalize your kitchen cabinets, pantry room, or
+                      closets guided by your needs and our criteria.
+                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -485,8 +545,8 @@ export default function Slider() {
                   <ul>
                     <li />
                     <li>
-                      the art of planning structures with aestheticism and
-                      function in mind.
+                      The art of creating a space with aestheticism and
+                      functionality in mind. We get creative!
                     </li>
                     <li />
                   </ul>
@@ -517,7 +577,7 @@ export default function Slider() {
                     <li />
                     <li>
                       We work on the best realistic vision of your project, by
-                      delivering renders and 3D animations and virtual tours
+                      delivering renders, 3D animations or virtual tours
                     </li>
                     <li />
                   </ul>
@@ -545,10 +605,40 @@ export default function Slider() {
                   <ul>
                     <li>We take the challenge!</li>
                     <li>
-                      Transforming a space and its existing problems by bringing
-                      out its full potential to the best result for future
+                      We transform a space and its existing problems by bringing
+                      out its full potential to the best result for your future
                       needs.
                     </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="card__side card__side--back card__side--back-2">
+                <div className="card__cta">
+                  <div className="card__price-box">
+                    <p className="card__price-only">Hello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="card">
+              <div className="card__side card__side--front">
+                <div className="card__picture card__picture--6">&nbsp;</div>
+                <h4 className="card__heading">
+                  <span className="card__heading-span card__heading-span--5">
+                    Cabinets
+                  </span>
+                </h4>
+                <div className="card__details">
+                  <ul>
+                    <li></li>
+                    <li>
+                      We personalize your kitchen cabinets, pantry room, or
+                      closets guided by your needs and our criteria.
+                    </li>
+                    <li></li>
                   </ul>
                 </div>
               </div>

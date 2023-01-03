@@ -16,11 +16,11 @@ import Text from "./Text.jsx";
         <h1>New Perspective Ltd.</h1>
       </div>
       <p class="revealText-inner">
-        We are Architects designing with a new perspective, making our designs
-        become one with their surroundings and adapting to their location in the
-        best way. Each project is elaborated with passion, enriched with every
-        detail and in hand with innovation. We ensure a successful design and
-        legal compliances.
+        We are Architects designing with a <span>New Perspective</span>. We make
+        our designs become one with their surroundings and adapting to their
+        location in the best way. Each project is elaborated with passion,
+        enriched with every detail and in hand with innovation. We ensure a
+        successful design and legal compliance.
       </p>
     </div>
   </div>
@@ -30,9 +30,13 @@ import Text from "./Text.jsx";
     <Text client:load /> -->
     <h2>
       <Image src={location} class="locationImage" alt="Logo" />
-      Cayman Islands (Grand Cayman, Little Cayman, Cayman Brac)&nbsp; &nbsp;&nbsp;
-      &nbsp; <Image src={location} class="locationImage" alt="Logo" /> Roatan (Islas
-      de la Bahia) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+      Grand Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
+      <Image src={location} class="locationImage" alt="Logo" />
+      Little Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
+      <Image src={location} class="locationImage" alt="Logo" />
+      Cayman Brac (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
+      <Image src={location} class="locationImage" alt="Logo" /> Roatan (Bay Islands,
+      Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
         src={location}
         class="locationImage"
         alt="Logo"
@@ -174,7 +178,7 @@ import Text from "./Text.jsx";
           .title {
             background-color: rgba(240, 248, 255, 0);
             margin-bottom: 5rem;
-            padding-left: 10rem;
+            padding-left: 4rem;
             padding-right: 12vw;
             h1 {
               color: $color-black;
@@ -191,7 +195,7 @@ import Text from "./Text.jsx";
           p {
             font-weight: 100;
             font-size: calc(15px + 0.390625vw);
-            padding-left: 10rem;
+            padding-left: 5rem;
             margin-right: 12vw;
             text-align: justify;
           }
@@ -202,8 +206,8 @@ import Text from "./Text.jsx";
           align-items: center;
           justify-content: center;
           .aboutImage {
-            height: 500px;
-            width: 500px;
+            height: 90%;
+            width: 80%;
             border: 2px solid $color-primary;
             border-radius: 50%;
           }
@@ -237,6 +241,11 @@ import Text from "./Text.jsx";
       opacity: 0;
       transform: translateX(150px);
       transition: 1s all ease;
+      span {
+        color: $color-black;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
     }
   }
   .revealText-inner.active {

@@ -170,12 +170,13 @@
     width: 76%;
   }
   .card__details ul li {
-    text-align: left;
+    text-align: justify;
     font-size: calc(15px + 0.390625vw);
     padding: 1rem;
   }
   .card__details ul li:not(:last-child) {
     border-bottom: 1px solid #eee;
+    text-align: justify;
   }
   .card__cta {
     position: absolute;
@@ -491,7 +492,7 @@
     border-top-right-radius: 3px;
   }
   .card__picture--1 {
-    background-image: url(/public/images/interiorDesign.jpg);
+    background-image: url(/public/images/renders.jpg);
   }
   .card__picture--2 {
     background-image: url(/public/images/permit.jpg);
@@ -500,13 +501,13 @@
     background-image: url(/public/images/renovation.jpg);
   }
   .card__picture--4 {
-    background-image: url(/public/images/renders.jpg);
+    background-image: url(/public/images/interiorDesign.jpg);
   }
   .card__picture--5 {
     background-image: url(/public/images/renovations.jpg);
   }
   .card__picture--6 {
-    background-image: url(/public/images/newBuilds.jpg);
+    background-image: url(/public/images/cabinets.png);
   }
   .card__heading {
     font-size: calc(20px + 0.390625vw);
