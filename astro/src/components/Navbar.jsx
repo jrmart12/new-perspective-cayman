@@ -43,6 +43,11 @@ export default function Navbar() {
               Contact
             </a>
           </li>
+          <li className="navigation__item">
+            <a href="/vacancies" className="navigation__link">
+              Vacancies
+            </a>
+          </li>
         </ul>
       </nav>
       <div className="navbar-mobile">
@@ -95,6 +100,14 @@ export default function Navbar() {
             >
               <a href="#contactUs" className="navbar-mobile__link">
                 Contact
+              </a>
+            </li>
+            <li
+              className="navbar-mobile__item"
+              onClick={() => setclose(!close)}
+            >
+              <a href="/vacancies" className="navbar-mobile__link">
+                Vacancies
               </a>
             </li>
           </ul>

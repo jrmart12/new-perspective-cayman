@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 import facebook from "/public/images/Facebook.png";
 import instagram from "/public/images/Instagram.png";
 ---
@@ -122,10 +121,10 @@ import instagram from "/public/images/Instagram.png";
     </div>
     <div class="links">
       <a href="https://es-la.facebook.com/"
-        ><Image src={facebook} alt="facebook" height={30} width={30} />
+        ><img src='/public/images/Facebook.png' alt="facebook" height={30} width={30} />
       </a>
       <a href="https://www.instagram.com/"
-        ><Image src={instagram} alt="instagram" height={30} width={30} />
+        ><img src='/public/images/Instagram.png' alt="instagram" height={30} width={30} />
       </a>
     </div>
   </div>

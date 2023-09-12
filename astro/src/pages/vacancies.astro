@@ -1,0 +1,168 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HiringBanner from "../components/HiringBanner.astro";
+import Navbar from "../components/Navbar.jsx";
+---
+
+<Layout title="We are hiring">
+  <header class="header" id="home">
+    <h1>We're Hiring!</h1>
+  </header>
+  <main class="vacancies">
+    <section class="box">
+      <p>
+        New Perspective Design & Construction Ltd. is looking to hire a Quantity
+        Surveyor with a passion for contracts and construction costs. Join our
+        team and make a significant impact!
+      </p>
+      <p>Position: Quantity Surveyor</p>
+      <p>
+        🏗️ Requirements: 
+      </p>
+      <ul>
+        <li>- 3+ years of experience in Quantity Surveying</li>
+        <li>- Strong project management skills</li>
+        <li>- Ability to identify and mitigate risk</li>
+        <li>- Creative problem-solving skills</li>
+        <li>- Strong initiative & determination</li>
+      </ul>
+      <p>
+        If you're ready to take on exciting challenges, contribute your
+        expertise, and be a part of a forward-thinking team, we want to hear
+        from you!
+      </p>
+      <p>To apply, fill out the google form or send your resume to our email:<br/>
+        <br/>
+        📧 <a href="mailto:info@newperspectivecayman.com"
+        >info@newperspectivecayman.com</a
+      >
+      </p>
+      <br/>
+        <a href="https://forms.gle/oD5V52YCSkt4zvHSA" class="button">
+          Google form
+        </a>
+      </bu>
+
+    </section>
+  </main>
+</Layout>
+
+<style lang="scss">
+  @import "../styles/variables";
+  @import "../styles/animations";
+  @import "../styles/mixins";
+  .vacancies {
+    background-image: url(/public/images/background.png);
+    background-size: cover;
+    background-position: center center;
+    height: 99vh;
+    display: flex;
+    @include media(mobile) {
+      align-items: flex-start;
+      }
+      @include media(desktop) {
+        align-items: center;
+    justify-content: center;
+      }
+
+    .box {
+      @include media(mobile) {
+        width: 100%;
+        padding: 10px;
+      }
+      @include media(desktop) {
+        width: 50%;
+        padding: 20px;
+      }
+      margin: 6rem 4rem 4rem;
+      border: 2px solid #b29758;
+      background-color: #fff;
+  
+      p {
+        margin-top: 5px;
+        color: $color-black;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 200;
+      }
+      .button{
+        @include media(mobile) {
+          width: 50%;
+      }
+      @include media(desktop) {
+        width: 20%;
+      }
+        color: #fff;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 200;
+        border: none;
+        background-color: #b29758;
+        width: 20%;
+        border-radius: 10px;
+        height: 50px;
+        &:link,
+        &:visited {
+          font-size: 2rem;
+          font-weight: 500;
+          padding: 1rem 4rem;
+          color: $color-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-image: linear-gradient(
+            120deg,
+            transparent 0%,
+            transparent 50%,
+            $color-white 50%
+          );
+          background-size: 220%;
+          transition: all 0.4s;
+        
+        }
+      }
+      a{
+        color: $color-black;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 200;
+      }
+      ul{
+        margin-bottom: 20px;
+        li{
+          list-style-type: none;
+          margin-top: 5px;
+        color: $color-black;
+        font-size: calc(12px + 0.390625vw);
+        font-weight: 200;
+        }
+      }
+    }
+  }
+  .header {
+    background-color: #b29758;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media(mobile) {
+      height: 15vh;
+    }
+    @include media(tablet) {
+      height: 15vh;
+    }
+    @include media(desktop) {
+      height: 15vh;
+    }
+    h1 {
+      color: $color-white;
+      @include media(mobile) {
+        font-size: calc(19px + 0.390625vw);
+      }
+      @include media(tablet) {
+        font-size: calc(19px + 0.390625vw);
+      }
+      @include media(desktop) {
+        font-size: calc(32px + 0.390625vw);
+      }
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+    }
+  }
+</style>

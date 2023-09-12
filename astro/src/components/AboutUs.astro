@@ -1,14 +1,11 @@
 ---
-import { Image } from "@astrojs/image/components";
-import image from "/public/images/about.jpg";
-import location from "/public/images/location.png";
 import Text from "./Text.jsx";
 ---
 
 <section class="about" id="aboutUs">
   <div class="aboutSection">
     <div class="image revealImage">
-      <Image src={image} class="aboutImage revealImage-inner" alt="Logo" />
+      <img src='/public/images/about.jpg' class="aboutImage revealImage-inner" alt="Logo" />
     </div>
     <div class="aboutCompany revealText">
       <div class="title revealText-inner">
@@ -29,19 +26,19 @@ import Text from "./Text.jsx";
     <!-- <Image src={location} class="locationImage" alt="Logo" />
     <Text client:load /> -->
     <h2>
-      <Image src={location} class="locationImage" alt="Logo" />
+      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
       Grand Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <Image src={location} class="locationImage" alt="Logo" />
+      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
       Little Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <Image src={location} class="locationImage" alt="Logo" />
+      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
       Cayman Brac (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <Image src={location} class="locationImage" alt="Logo" /> Roatan (Bay Islands,
-      Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
-        src={location}
+      <img src='/public/images/location.png' class="locationImage" alt="Logo" /> Roatan (Bay Islands,
+      Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <img
+        src='/public/images/location.png'
         class="locationImage"
         alt="Logo"
-      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
-        src={location}
+      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <img
+        src='/public/images/location.png'
         class="locationImage"
         alt="Logo"
       />San Pedro Sula (Cortes, Honduras)

@@ -1,6 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
-import logo from "/public/images/logo_np.png";
 import { SEO } from "astro-seo";
 ---
 
@@ -79,7 +77,7 @@ import { SEO } from "astro-seo";
   <body>
     <div class="loading">
       <div class="image">
-        <Image src={logo} width={200} height={200} />
+        <img src='/public/images/logo_np.png' width={200} height={200} />
       </div>
       <div id="loader">
         <span id="dot"></span>
