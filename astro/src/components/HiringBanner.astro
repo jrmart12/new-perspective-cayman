@@ -1,10 +1,12 @@
-
 ---
+import { Image } from 'astro:assets';
+import hiring from '../images/hiring.jpeg'
+import position from '../images/position.jpg'
 ---
 
 <section class="hiring">
-    <img src='/public/images/hiring.jpeg' alt="we are hiring" class="left" />
-    <img src="/public/images/position.jpg" alt="position" class="right" />
+    <Image src={hiring} alt="we are hiring" class="left" />
+    <Image src={position} alt="position" class="right" />
 </section>
 
 <style lang="scss">

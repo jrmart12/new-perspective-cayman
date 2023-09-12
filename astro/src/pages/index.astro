@@ -5,41 +5,20 @@ import Services from "../components/Services.astro";
 import DetailPassion from "../components/DetailPassion.astro";
 import ContactUs from "../components/ContactUs.astro";
 import AboutUs from "../components/AboutUs.astro";
-
-
-import { getSanityContent, getSanityImageUrl } from "../utils/helpers.js";
-import { website } from "../lib/api.js";
 import BannerContactUs from "../components/BannerContactUs.astro";
-const response = await getSanityContent({ query: website });
-const websites = response.allWebsite;
+import { Image } from 'astro:assets';
+import logo from '../images/logo.png';
+import logo_np from '../images/logo_np.png';
+import facebook from "../images/FacebookFooter.png";
+import instagram from "../images/InstagramFooter.png"
 ---
 
 <Layout>
-  <!-- {
-    websites.map((website) => (
-      <main>
-        <h1 class="text-gradient">{website.title}</h1>
-        <ul role="list" class="link-card-grid">
-          <Card
-            href="/contact"
-            title="Contact Us"
-            body="Tell us what you think"
-          />
-          <Card href="/components" title="Components" body="Enter Components" />
-        </ul>
-        <Image
-          src={getSanityImageUrl(website.mainImage).width(1200).url()}
-          width="720"
-          height="420"
-        />
-      </main>
-    ))
-  } -->
   <header class="header" id="home">
     <Navbar client:load />
     <div class="header__logo_div">
       <div class="header__logo-box">
-        <img src='/public/images/logo.png' class="header__logo" alt="Logo" />
+        <Image src={logo} class="header__logo" alt="Logo" />
       </div>
     </div>
   </header>
@@ -92,7 +71,7 @@ const websites = response.allWebsite;
       </div>
     </div>
     <div class="logo">
-      <img src="/public/images/logo_np.png" alt="logo_footer" class="logo_footer" />
+      <Image src={logo_np} alt="logo_footer" class="logo_footer" />
       <p>
         Copyright and Powered by &nbsp; <a href="https://jr-martinez.com/"
           >jr-martinez.com</a
@@ -108,10 +87,10 @@ const websites = response.allWebsite;
       </div>
       <div class="social">
         <a href="https://es-la.facebook.com/"
-          ><img src="/public/images/FacebookFooter.png" alt="facebook" height={30} width={30} />
+          ><Image src={facebook} alt="facebook" height={30} width={30} />
         </a>
         <a href="https://www.instagram.com/"
-          ><img src="/public/images/InstagramFooter.png" alt="instagram" height={30} width={30} />
+          ><Image src={instagram} alt="instagram" height={30} width={30} />
         </a>
       </div>
       <p>

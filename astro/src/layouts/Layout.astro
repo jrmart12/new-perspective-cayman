@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { SEO } from "astro-seo";
+import logo_np from '../images/logo_np.png'
 ---
 
 <!DOCTYPE html>
@@ -77,7 +79,7 @@ import { SEO } from "astro-seo";
   <body>
     <div class="loading">
       <div class="image">
-        <img src='/public/images/logo_np.png' width={200} height={200} />
+        <Image src={logo_np} width={200} height={200} alt="logo"/>
       </div>
       <div id="loader">
         <span id="dot"></span>

@@ -1,6 +1,7 @@
 ---
-import facebook from "/public/images/Facebook.png";
-import instagram from "/public/images/Instagram.png";
+import { Image } from 'astro:assets';
+import facebook from "../images/Facebook.png";
+import instagram from "../images/Instagram.png";
 ---
 
 <section class="contact">
@@ -121,10 +122,10 @@ import instagram from "/public/images/Instagram.png";
     </div>
     <div class="links">
       <a href="https://es-la.facebook.com/"
-        ><img src='/public/images/Facebook.png' alt="facebook" height={30} width={30} />
+        ><Image src={facebook} alt="facebook" height={30} width={30} />
       </a>
       <a href="https://www.instagram.com/"
-        ><img src='/public/images/Instagram.png' alt="instagram" height={30} width={30} />
+        ><Image src={instagram} alt="instagram" height={30} width={30} />
       </a>
     </div>
   </div>

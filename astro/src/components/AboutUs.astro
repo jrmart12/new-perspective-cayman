@@ -1,11 +1,14 @@
 ---
 import Text from "./Text.jsx";
+import { Image } from 'astro:assets';
+import about from '../images/about.jpg'
+import location from '../images/location.png'
 ---
 
 <section class="about" id="aboutUs">
   <div class="aboutSection">
     <div class="image revealImage">
-      <img src='/public/images/about.jpg' class="aboutImage revealImage-inner" alt="Logo" />
+      <Image src={about} class="aboutImage revealImage-inner" alt="Logo" />
     </div>
     <div class="aboutCompany revealText">
       <div class="title revealText-inner">
@@ -26,19 +29,19 @@ import Text from "./Text.jsx";
     <!-- <Image src={location} class="locationImage" alt="Logo" />
     <Text client:load /> -->
     <h2>
-      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
+      <Image src={location} class="locationImage" alt="Logo" />
       Grand Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
+      <Image src={location} class="locationImage" alt="Logo" />
       Little Cayman (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <img src='/public/images/location.png' class="locationImage" alt="Logo" />
+      <Image src={location} class="locationImage" alt="Logo" />
       Cayman Brac (Cayman Islands)&nbsp; &nbsp;&nbsp; &nbsp;
-      <img src='/public/images/location.png' class="locationImage" alt="Logo" /> Roatan (Bay Islands,
-      Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <img
-        src='/public/images/location.png'
+      <Image src={location} class="locationImage" alt="Logo" /> Roatan (Bay Islands,
+      Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
         class="locationImage"
         alt="Logo"
-      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <img
-        src='/public/images/location.png'
+      />La Ceiba (Atlantida, Honduras) &nbsp; &nbsp;&nbsp; &nbsp; <Image
+        src={location}
         class="locationImage"
         alt="Logo"
       />San Pedro Sula (Cortes, Honduras)
