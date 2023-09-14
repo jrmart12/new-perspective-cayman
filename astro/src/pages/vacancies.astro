@@ -6,39 +6,53 @@ import Navbar from "../components/Navbar.jsx";
 
 <Layout title="We are hiring">
   <header class="header" id="home">
-    <h1>We're Hiring!</h1>
+    <h1>WE ARE HIRING!</h1>
   </header>
   <main class="vacancies">
     <section class="box">
+      <h2>Quantity Surveyor </h2>
+      <h2 class="full"><span class="full">(Full Time)</span></h2>
       <p>
-        New Perspective Design & Construction Ltd. is looking to hire a Quantity
+        <span>New Perspective Design & Construction Ltd.</span> is looking to hire a Quantity
         Surveyor with a passion for contracts and construction costs. Join our
         team and make a significant impact!
       </p>
-      <p>Position: Quantity Surveyor</p>
+      <p class="position"> <span>Position:</span> Quantity Surveyor (Full Time)</p>
+      <p>Position includes medical and pension benefits.</p>
       <p>
-        🏗️ Requirements: 
+        <span>Responsibilities: </span>
       </p>
       <ul>
-        <li>- 3+ years of experience in Quantity Surveying</li>
-        <li>- Strong project management skills</li>
-        <li>- Ability to identify and mitigate risk</li>
-        <li>- Creative problem-solving skills</li>
-        <li>- Strong initiative & determination</li>
+        <li>- Estimating quantities and construction costs for material and labor.</li>
+        <li>- Elaborating realistic time scales for projects.</li>
+        <li>- Preparing tender and contract documents.</li>
+        <li>- Valuing completed work, managing budgets and overseeing payments.</li>
+      </ul>
+      <p>
+        <span>Requirements: </span>
+      </p>
+      <ul>
+        <li>- 3+ years of experience in Quantity Surveying.</li>
+        <li>- Strong project management skills.</li>
+        <li>- Ability to identify and mitigate risk.</li>
+        <li>- Creative problem-solving skills.</li>
+        <li>- Strong initiative & determination.</li>
+        <li>- Fluency in English.</li>
       </ul>
       <p>
         If you're ready to take on exciting challenges, contribute your
         expertise, and be a part of a forward-thinking team, we want to hear
         from you!
       </p>
-      <p>To apply, fill out the google form or send your resume to our email:<br/>
-        <br/>
+      <p class="canditate">Candidate would be required to reloacate to the Cayman Islands.</p>
+      <p class="apply">To apply, fill out the google form or send your resume to our email:<br/>
+    
         📧 <a href="mailto:info@newperspectivecayman.com"
         >info@newperspectivecayman.com</a
       >
       </p>
       <br/>
-        <a href="https://forms.gle/oD5V52YCSkt4zvHSA" class="button">
+        <a href="https://forms.gle/bjUEsg41mvALFmJC8" class="button">
           Google form
         </a>
       </bu>
@@ -55,7 +69,7 @@ import Navbar from "../components/Navbar.jsx";
     background-image: url(/public/images/background.png);
     background-size: cover;
     background-position: center center;
-    height: 99vh;
+    height: 100%;
     display: flex;
     @include media(mobile) {
       align-items: flex-start;
@@ -63,6 +77,14 @@ import Navbar from "../components/Navbar.jsx";
       @include media(desktop) {
         align-items: center;
     justify-content: center;
+      }
+
+      h2{
+       width: 100%;
+       text-align: left;
+       font-size: calc(20px + 0.390625vw);
+       margin: 0;
+       padding: 0;
       }
 
     .box {
@@ -74,10 +96,26 @@ import Navbar from "../components/Navbar.jsx";
         width: 50%;
         padding: 20px;
       }
-      margin: 6rem 4rem 4rem;
+      margin: 5rem 4rem 4rem;
       border: 2px solid #b29758;
       background-color: #fff;
-  
+      span{
+        font-weight: bold;
+      }
+  .position{
+    margin-bottom: 0px ;
+    padding-top: 0px;
+  }
+  .canditate{
+    margin-bottom: 30px;
+  }
+  .apply{
+    
+  }
+  .full{
+    font-size: calc(12px + 0.390625vw);
+    margin-bottom: 50px;
+  }
       p {
         margin-top: 5px;
         color: $color-black;
@@ -124,7 +162,7 @@ import Navbar from "../components/Navbar.jsx";
         font-weight: 200;
       }
       ul{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         li{
           list-style-type: none;
           margin-top: 5px;
